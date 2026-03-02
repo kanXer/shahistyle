@@ -6,14 +6,20 @@ export default function Home() {
     <div>
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[70vh] sm:h-[40vh] md:h-screen w-full">
+      <section className="relative h-[85vh] sm:h-[90vh] md:h-screen w-full">
+
+        <Image
+          src="/hero-mobile.png"
+          alt="Hero"
+          fill
+          className="object-cover md:hidden"
+        />
 
         <Image
           src="/hero.png"
           alt="Hero"
           fill
-          priority
-          className="object-cover object-center"
+          className="object-cover hidden md:block"
         />
 
         <div className="absolute inset-0 bg-black/40" />
