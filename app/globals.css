@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* ☀️ LIGHT */
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+/* 🌙 DARK */
+html.dark {
+  --background: #0f0f0f;
+  --foreground: #f3f4f6;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+/* 👑 Toss / Bounce Animation */
+
+@keyframes toss {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-40px) rotate(10deg); }
+  50%  { transform: translateY(0) rotate(-8deg); }
+  75%  { transform: translateY(-20px) rotate(4deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.animate-toss {
+  animation: toss 1.2s ease-in-out infinite;
+}
