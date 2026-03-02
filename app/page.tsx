@@ -6,7 +6,7 @@ export default function Home() {
     <div>
 
       {/* ================= HERO ================= */}
-      <section className="relative h-[70vh] sm:h-[60vh] md:h-screen w-full">
+      <section className="relative h-[70vh] sm:h-[40vh] md:h-screen w-full">
 
         <Image
           src="/hero.png"
