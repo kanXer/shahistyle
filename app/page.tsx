@@ -13,7 +13,7 @@ export default function Home() {
           alt="Hero"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
         />
 
         <div className="absolute inset-0 bg-black/40" />
